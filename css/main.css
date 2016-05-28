@@ -1,0 +1,310 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+canvas {
+    position: relative;
+    bottom: 85px;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+.nav nav {
+    height: 40px;
+    width: 100%;
+    background: background: rgb(30,87,153); 
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #283744;
+    z-index: 10
+}
+.nav nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+.nav nav li {
+    display: inline;
+    float: left;
+}
+.nav nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+}
+.nav nav li a {
+    border-right: 1px solid #576979;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: 1s;
+}
+.nav nav li:last-child a {
+    border-right: 0;
+}
+.nav nav a:hover,
+nav a:active {
+    background-color: #8c99a4;
+    color: rgb(50, 75, 200);
+}
+.nav nav a#pull {
+    display: none;
+}
+
+/*BANNER*/
+
+.hire-container {
+    background: rgb(50, 75, 200);
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 10
+}
+.hire-text {
+    height: 150%;
+    color: #fafafa;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    z-index: 10
+}
+.hire-text a {
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    z-index: 10;
+}
+.hire-text a span:hover {
+    font-size: 1.25em;
+    transition: 1s;
+    cursor: crosshair;
+}
+
+/*pole is on the left of the logo*/
+.pole {
+  animation: barberPole 1s linear infinite;
+  width: 18px;
+  height: 50px;
+  float: right;
+  background-image: repeating-linear-gradient(-45deg, #f47067 0%, #f47067 12.5%, #fcf9f1 12.5%, #fcf9f1 25%, #94bed3 25%, #94bed3 37.5%, #fcf9f1 37.5%, #fcf9f1 50%, #f47067 50%, #f47067 62.5%, #fcf9f1 62.5%, #fcf9f1 75%, #94bed3 75%, #94bed3 87.5%, #fcf9f1 87.5%, #fcf9f1 100%);
+  position: absolute;
+  top: 31%;
+  right: 24%;
+
+}
+#pole {
+   opacity:0;  
+    animation:fadeIn ease-in 1; 
+    animation-fill-mode:forwards; 
+    animation-duration:1s;
+    animation-delay: 2s
+}
+
+@keyframes fadeIn {
+ from { 
+  opacity:0;
+  } to { 
+  opacity:1; 
+  } 
+}
+
+.pole:after {
+  width: 20px;
+  height: 14px;
+  content: '';
+  display: block;
+  background: #324bc8;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  top: 28px;
+  left: -1px;
+}
+.pole:before {
+  width: 20px;
+  height: 12px;
+  content: '';
+  display: block;
+  background: #324bc8;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  top: -10px;
+  left: -1px;
+}
+ @keyframes barberPole {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 18px 0;
+  }
+}
+/*pole2 is on  the right of the logo*/
+
+.pole2 {
+  animation: barberPole 1s linear infinite;
+  width: 18px;
+  height: 50px;
+  float: right;
+  background-image: repeating-linear-gradient(-45deg, #f47067 0%, #f47067 12.5%, #fcf9f1 12.5%, #fcf9f1 25%, #94bed3 25%, #94bed3 37.5%, #fcf9f1 37.5%, #fcf9f1 50%, #f47067 50%, #f47067 62.5%, #fcf9f1 62.5%, #fcf9f1 75%, #94bed3 75%, #94bed3 87.5%, #fcf9f1 87.5%, #fcf9f1 100%);
+  position: absolute;
+  top: 31%;
+  left: 19%;
+
+}
+#pole2 {
+   opacity:0;  
+    animation:fadeIn ease-in 1; 
+    animation-fill-mode:forwards; 
+    animation-duration:1s;
+    animation-delay: 2s
+}
+
+@keyframes fadeIn {
+ from { 
+  opacity:0;
+  } to { 
+  opacity:1; 
+  } 
+}
+
+.pole2:after {
+  width: 20px;
+  height: 14px;
+  content: '';
+  display: block;
+  background: #324bc8;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  top: 28px;
+  left: -1px;
+}
+.pole2:before {
+  width: 20px;
+  height: 12px;
+  content: '';
+  display: block;
+  background: #324bc8;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  top: -10px;
+  left: -1px;
+}
+ @keyframes barberPole {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 18px 0;
+  }
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 320px) {
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+    }
+}
+@media screen and (max-width: 671px) {
+    canvas {
+        bottom: 100px;
+        width: 250%;
+        height: 250%;
+        right:67%;
+    }
+ .pole, .pole2 {
+        display: none
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav nav {
+        height: auto;
+    }
+    .nav nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .nav nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .nav nav li a {
+        border-bottom: 1px solid #576979;
+        border-right: 1px solid #576979;
+    }
+    .nav nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .nav nav {
+        border-bottom: 0;
+    }
+    .nav nav ul {
+        display: none;
+        height: auto;
+    }
+    .nav nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .nav nav a#pull:after {
+        content: "";
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .pole, .pole2 {
+         top: 24%;
+    }
+  }
+
+
+@media only screen and (max-width: 825px) {
+    .pole, .pole2 {
+         top: 20%;
+    }
+  }
+
